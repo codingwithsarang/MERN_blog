@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { Home,Signin,Signup, Dashboard, About,Projects } from './pages'
-import Header from './components/Header'
+import Header from './components/Header.jsx'
+import FooterCom from './components/Footer.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Dashboard' element={<Dashboard />} />
         <Route path='/projects' element={<Projects />} />
       </Routes>
+      <FooterCom />
     </BrowserRouter>
   )
 }

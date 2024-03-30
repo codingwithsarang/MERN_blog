@@ -7,6 +7,7 @@ const Signup = () => {
     const [formData, setFormData] = useState({})
     const [errorMessage, setErrorMessage] = useState(null)
     const [loading , setLoading] = useState(false)
+
     const navigate = useNavigate()
 
     const handleChange = (e)=>{
@@ -33,7 +34,7 @@ const Signup = () => {
         })
         const data = await res.json()
 
-        console.log(data)
+        
 
         if(data.success === false){
           return setErrorMessage(data.message)
@@ -59,7 +60,7 @@ const Signup = () => {
         {/* left side */}
         <div className='flex-1'>
           <Link to={'/'} className='font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 bg-gradient-to-r bg-blue-300 rounded-lg text-white'>Sahad's</span>
+            <span className='px-2 py-1 bg-gradient-to-r bg-[#FF00FF] rounded-lg text-white'>Sahad's</span>
             Blog
           </Link>
           <p className='text-sm m-5'>You can sign up with your email and password or with your google account</p>
