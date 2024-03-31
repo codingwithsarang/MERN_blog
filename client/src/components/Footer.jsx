@@ -17,7 +17,7 @@ const FooterCom = () => {
                         <div>
                         <Footer.Title title='About'/>
                         <Footer.LinkGroup col>
-                            <Footer.Link   nk href='https://www.100jsprojects.com' target='_blank' rel='noopener noreferrer'>
+                            <Footer.Link   nk='true' href='https://www.100jsprojects.com' target='_blank' rel='noopener noreferrer'>
                                 100 js Projects
                             </Footer.Link>
                             <Footer.Link href='/about' target='_blank' rel='noopener noreferrer'>
@@ -28,7 +28,7 @@ const FooterCom = () => {
                         <div>
                         <Footer.Title title='Follow Us'/>
                         <Footer.LinkGroup col>
-                            <Footer.Link   nk href='https://github.com/codingwithsarang/MERN_blog' target='_blank' rel='noopener noreferrer'>
+                            <Footer.Link   nk='true' href='https://github.com/codingwithsarang/MERN_blog' target='_blank' rel='noopener noreferrer'>
                                 Code Base Link(Github)
                             </Footer.Link>
                             <Footer.Link href='#' target='_blank' rel='noopener noreferrer'>
